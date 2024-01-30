@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Clubs</title>
+  </head>
+  <body>
+    <h1>Clubs</h1>
+
+    <form method="post" action="../../../scripts/process_form.php">
+      <input type="hidden" name="table_name" value="clubs" />
+
+      <label for="club_size">Club Size:</label><br />
+      <input type="text" id="club_size" name="club_size" required /><br /><br />
+
+      <label for="club_name">Club Name:</label><br />
+      <input type="text" id="club_name" name="club_name" required /><br /><br />
+
+      <label for="club_desc">Club Description:</label><br />
+      <input type="text" id="club_desc" name="club_desc" required /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events</h1> 
+    <form method="get" action="../../../scripts/generate_form.php">
+        <input type="hidden" name="table_name" value="events">
+
+        <select id="type_attributes" name="type_attributes" required>
+            <option value="number~event_id">Event Id</option>
+            <option value="number~event_size">Event Size</option>
+            <option value="text~event_name">Event Name</option>
+            <option value="text~event_dec">Event Description</option>
+            <option value="select~event_privacy">Event Event Privacy</option>
+            <option value="datetime-local~event_time">Event Time</option>
+        </select>
+
+        <button type="submit">Select</button>
+    </form>
+</body>
+</html>
