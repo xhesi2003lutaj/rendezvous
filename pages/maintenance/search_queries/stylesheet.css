@@ -1,0 +1,33 @@
+body {
+  background: #2f0e53;
+  /* background: #0e1111; */
+  color: white;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  width: 40%; /* Set the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding for spacing inside the form */
+}
+
+/* Optionally, you can style form elements like input fields and buttons */
+form input,
+form textarea,
+form select {
+  width: 100%; /* Make form elements take the full width of the form */
+  padding: 10px; /* Add padding for spacing inside form elements */
+  margin-bottom: 15px; /* Add margin at the bottom of form elements for spacing */
+}
+
+form button {
+  padding: 10px 20px; /* Add padding for spacing inside the button */
+
+  color: white; /* Set the text color */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}

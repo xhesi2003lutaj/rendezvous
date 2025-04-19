@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>Events</h1>
+
+    <form method="post" action="../../../scripts/process_form.php">
+      <input type="hidden" name="table_name" value="events" />
+
+      <label for="event_size">Event Size:</label><br />
+      <input
+        type="text"
+        id="event_size"
+        name="event_size"
+        required
+      /><br /><br />
+
+      <label for="event_name">Event Name:</label><br />
+      <input
+        type="text"
+        id="event_name"
+        name="event_name"
+        required
+      /><br /><br />
+
+      <label for="event_desc">Event Description:</label><br />
+      <input
+        type="text"
+        id="event_desc"
+        name="event_desc"
+        required
+      /><br /><br />
+
+      <label for="event_privacy">Event Privacy:</label><br />
+      <select id="event_privacy" name="event_privacy" required>
+        <option value="private">Private</option>
+        <option value="public">Public</option></select
+      ><br /><br />
+
+      <label for="event_time">Event Time:</label><br />
+      <input
+        type="datetime-local"
+        id="event_time"
+        name="event_time"
+        required
+      /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
